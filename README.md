@@ -19,7 +19,7 @@ Automated classification of biomedical images is crucial for assisting diagnosis
 **Note:** Due to file size limitations, the dataset is not hosted directly in this repository.
 **How to run this project:**
 1.  Download the **PathMNIST** dataset (part of MedMNIST v2) from the official source: [MedMNIST Website](https://medmnist.com/) or [Zenodo](https://zenodo.org/record/6496656).
-2.  Create a folder named `Assignment2Data` in the same directory as the notebook.
+2.  Create a folder named `Data` in the same directory as the notebook.
 3.  Place the downloaded `.npy` files (`X_train.npy`, `y_train.npy`, etc.) into that folder.
 4.  Run the notebook.
 
