@@ -1,4 +1,4 @@
-# Pathology Image Classification: CNN vs. MLP vs. Random Forest
+# Pathology Image Classification: Random Forest vs. MLP vs. CNN
 
 ## 1. Project Overview
 Automated classification of biomedical images is crucial for assisting diagnosis and reducing the workload of healthcare professionals. This project focuses on classifying 9 types of body tissues (e.g., adipose tissue, mucus, cancer-associated stroma) using the **PathMNIST** dataset (a subset of MedMNIST).
@@ -10,11 +10,18 @@ Automated classification of biomedical images is crucial for assisting diagnosis
 
 **Key Results:** The **CNN** model outperformed others with an accuracy of **83.24%**, demonstrating the superiority of spatial feature extraction in medical imaging tasks.
 
-## 2. Dataset
+## 2. Dataset & Setup
 * **Source:** [PathMNIST (MedMNIST v2)](https://medmnist.com/)
 * **Data Structure:** 28x28 RGB images.
 * **Classes:** 9 tissue types (Label 0-8).
 * **Size:** Training set (32,000 images), Test set (8,000 images).
+
+**Note:** Due to file size limitations, the dataset is not hosted directly in this repository.
+**How to run this project:**
+1.  Download the **PathMNIST** dataset (part of MedMNIST v2) from the official source: [MedMNIST Website](https://medmnist.com/) or [Zenodo](https://zenodo.org/record/6496656).
+2.  Create a folder named `Assignment2Data` in the same directory as the notebook.
+3.  Place the downloaded `.npy` files (`X_train.npy`, `y_train.npy`, etc.) into that folder.
+4.  Run the notebook.
 
 ## 3. Methodology & Tech Stack
 * **Python Libraries:** TensorFlow (Keras), Scikit-learn, Pandas, NumPy, Seaborn, Keras-Tuner.
